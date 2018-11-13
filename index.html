@@ -3,7 +3,12 @@
 <meta charset="utf-8">  
 <link href="index.css" rel="stylesheet"/> 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="index.js"></script>  
+<script>
+    function fnMove(seq){
+        var offset = $(seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+</script>
 <head>  
     <title>Jeongkiwon's page</title>
 </head>  

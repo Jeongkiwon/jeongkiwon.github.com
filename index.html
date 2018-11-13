@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>  
 <html>  
 <meta charset="utf-8">  
-<link href="style.css" rel="stylesheet"/>  
-<script src="app.js"></script>  
+<link href="index.css" rel="stylesheet"/>  
+<script src="index.js"></script>  
 <head>  
     <title>Jeongkiwon's page</title>
 </head>  
@@ -11,17 +11,17 @@
 <div class="container">
     <div class="sidenav">
         <ul>
-            <li>profile</li>
-            <li>side project</li>
-            <li>teaching</li>
-            <li>contact</li>
+            <li onclick="fnMove('profile')">profile</li>
+            <li onclick="fnMove('side_project')">side project</li>
+            <li onclick="fnMove('teaching')">teaching</li>
+            <li onclick="fnMove('contact')">contact</li>
         </ul>
     </div>
-    <div class="content">
-        <div class="profile">profile</div>
-        <div class="side_project">side project</div>
-        <div class="teaching">teaching</div>
-        <div class="contact">contact</div>
+    <div class="contents">
+        <div class="profile content">profile</div>
+        <div class="side_project content">side project</div>
+        <div class="teaching content">teaching</div>
+        <div class="contact content">contact</div>
     </div>
 </div>
 

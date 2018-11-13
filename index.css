@@ -1,4 +1,7 @@
 div .container{
     display: flex;
-    
+    direction: row;
+}
+div .content{
+    margin-bottom: 1000px;
 }

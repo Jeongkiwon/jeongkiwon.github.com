@@ -1,36 +1,20 @@
-<!DOCTYPE HTML>  
-<html>  
-<meta charset="utf-8">  
-<link href="index.css" rel="stylesheet"/> 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-    function fnMove(seq){
-        var offset = $(seq).offset();
-        $('html, body').animate({scrollTop : offset.top}, 400);
-    }
-</script>
-<head>  
-    <title>Jeongkiwon's page</title>
-</head>  
-<body>  
-<h1>This page is Jeongkiwon's github page</h1>
-<div class="container">
-    <div class="sidenav">
-        <ul>
-            <li onclick="fnMove('#profile')">profile</li>
-            <li onclick="fnMove('#side_project')">side project</li>
-            <li onclick="fnMove('#teaching')">teaching</li>
-            <li onclick="fnMove('#contact')">contact</li>
-        </ul>
-    </div>
-    <div class="contents">
-        <div id="profile" class="content">profile</div>
-        <div id="side_project" class="content">side project</div>
-        <div id="teaching" class="content">teaching</div>
-        <div id="contact" class="content">contact</div>
-    </div>
-</div>
-
-<div class="footer"></div>
-</body>  
-</html>  
+<HTML>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        div {margin-bottom:1000px;}
+    </style>
+    <script>
+        function fnMove(seq){
+            var offset = $("#div" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 400);
+        }
+    </script>
+     <BODY>
+        <button onclick="fnMove('1')">div1로 이동</button>
+        <button onclick="fnMove('2')">div2로 이동</button>
+        <button onclick="fnMove('3')">div3로 이동</button>
+        <div id="div1">div1</div>
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+     </BODY>
+    </HTML>

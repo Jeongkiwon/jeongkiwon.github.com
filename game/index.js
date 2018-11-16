@@ -10,18 +10,18 @@ let i;
 let time;
 
 document.getElementById('start').onclick=function(){
+    document.getElementById('start').classList.add('hidden');
+    
     start();
 }
 document.getElementById('restart').onclick=function(){
     document.getElementById('over').classList.add('hidden');
-    document.getElementById('start').classList.remove('hidden');
+    
     document.getElementById('restart').classList.add('hidden');
     start();
 }
 
-
 function start(){
-    
     i=0;
     time=10;
     document.getElementById("result").innerHTML=i;

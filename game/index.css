@@ -1,5 +1,9 @@
 
-div.row_div{
+div.container{
+    display:flex;
+    direction: row;
+}
+div.row{
     display:flex;
     direction: row;
 }
@@ -15,7 +19,7 @@ div.black{
     background: black;
 }
 div#over{
-    padding-top:20%; 
+    padding-top:25%; 
     position: fixed;
     left:8px;
     top:8px;
@@ -68,3 +72,10 @@ div#restart:active{
     font-weight: bold;
     width: 140px;
 }
+
+@media (max-width: 830px) {
+    div.container{
+        display:flex;
+        direction: column !important;
+    }
+  }

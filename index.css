@@ -1,7 +1,52 @@
-div .container{
-    display: flex;
-    direction: row;
+body{
+    background:linear-gradient( to bottom, #519D9E, #58C9B9, #9DC8C8 )
 }
-div .content{
-    margin-bottom: 1000px;
+h1{
+    margin-left:220px;
+    margin-bottom:0px;
+}
+h2{
+    margin-top:0px;
+}
+div.container{
+    position: relative;
+    display: flex;
+}
+div.contents{
+    margin-top:10px;
+    margin-left:220px;
+    width:100%;
+}
+div.content{
+    padding-top:90px;
+    padding-bottom: 1000px;
+}
+div.sidenav{
+    margin-top:100px;
+    margin-left:20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-right:20px;
+}
+ul,a{
+    all:unset;
+}
+ul{
+    list-style:none;
+}
+li{
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight: bold;
+}
+a{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-top:5px;
+}
+a:hover{
+    background: black;
+    color:white;
 }

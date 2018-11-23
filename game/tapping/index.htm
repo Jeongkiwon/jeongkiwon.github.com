@@ -1,0 +1,47 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="row_div">
+            <div class="game">
+                <div class="row_div">
+                    <div id="pad1" class="pad white"></div>
+                    <div id="pad2" class="pad white"></div>
+                    <div id="pad3" class="pad white"></div>
+                </div>
+                <div class="row_div">
+                    <div id="pad4" class="pad white"></div>
+                    <div id="pad5" class="pad white"></div>
+                    <div id="pad6" class="pad white"></div>
+                </div>
+                <div class="row_div">
+                    <div id="pad7" class="pad white"></div>
+                    <div id="pad8" class="pad white"></div>
+                    <div id="pad9" class="pad white"></div>
+                </div>              
+            </div>
+            <div class="menu">
+                <div><h2>Padding Game!</h2></div>
+                <div>Game: <span id="gamecount"></span></div>
+                <div>Score: <span id="score"></span></div>
+                <div>time: <span id="time"></span></div>
+                <div id=start>Start</div>
+                <div id=restart class="hidden">Restart</div>
+
+                <div>Ranking Top3</div>
+                <ul>
+                    <li id="top1"></li>
+                    <li id="top2"></li>
+                    <li id="top3"></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div id="over" class="hidden">
+            GAME OVER
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

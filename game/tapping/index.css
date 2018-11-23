@@ -1,16 +1,16 @@
 
-div.container{
-    display:flex;
-    direction: row;
-}
-div.row{
+div.row_div{
     display:flex;
     direction: row;
 }
 div.pad{
     width:190px;
-    height:190px;
+    height:110px;
     border:solid 1px black;
+    color:white;
+    font-size:20px;
+    text-align: center;
+    padding-top: 80px;
 }
 div.menu{
     margin-left: 30px;
@@ -19,7 +19,7 @@ div.black{
     background: black;
 }
 div#over{
-    padding-top:25%; 
+    padding-top:20%; 
     position: fixed;
     left:8px;
     top:8px;
@@ -72,10 +72,3 @@ div#restart:active{
     font-weight: bold;
     width: 140px;
 }
-
-@media (max-width: 830px) {
-    div.container{
-        display:flex;
-        direction: column !important;
-    }
-  }

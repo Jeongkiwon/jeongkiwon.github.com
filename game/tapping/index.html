@@ -1,10 +1,10 @@
 <html>
     <head>
-        
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <div class="row_div">
+        <div class="content">
             <div class="game">
                 <div class="row_div">
                     <div id="pad1" class="pad white"></div>
@@ -22,26 +22,29 @@
                     <div id="pad9" class="pad white"></div>
                 </div>              
             </div>
+            <div id="over" class="hidden">
+            GAME OVER
+            </div>
             <div class="menu">
+                <div>
                 <div><h2>Padding Game!</h2></div>
                 <div>Game: <span id="gamecount"></span></div>
                 <div>Score: <span id="score"></span></div>
                 <div>time: <span id="time"></span></div>
+                </div>
                 <div id=start>Start</div>
                 <div id=restart class="hidden">Restart</div>
 
-                <div>Ranking Top3</div>
+                <div>Ranking Top3
                 <ul>
                     <li id="top1"></li>
                     <li id="top2"></li>
                     <li id="top3"></li>
                 </ul>
-                
+                </div>
             </div>
         </div>
-        <div id="over" class="hidden">
-            GAME OVER
-        </div>
+        
         <script src="./index.js"></script>
     </body>
 </html>

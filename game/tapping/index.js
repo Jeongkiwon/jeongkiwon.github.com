@@ -10,14 +10,9 @@ let gameCount;
 
 const Score= document.querySelector("#score");
 const Time= document.querySelector("#time");
-const padAll= document.querySelector(".game");
-const over=document.querySelector("#over"); 
-    
-
-function gameOver(){
-    padAll.classList.add("hidden");
-    over.classList.remove("hidden");
-}
+const Blck= document.querySelector(".black");
+const gameOver= document.querySelector("#over");
+const game = document.querySelector(".game");
 
 var generateRandom = function (min, max) {
     var ranNum = Math.floor(Math.random()*(max-min+1)) + min;
@@ -32,14 +27,16 @@ function showScore(){
 function countTime(){
     if(time>0){time--;}
     else{
-        gameOver();
+        gameOver.classList.remove("hidden");
+        game.classList.add("hidden");
     }
 }
 
 function countDown(){
     if(down>0){down=down-0.01;}
     else{
-        gameOver();
+        gameOver.classList.remove("hidden");
+        game.classList.add("hidden");
         
     }
 }
@@ -49,10 +46,6 @@ function clearBlack(){
     var i;
     for(i=0;i<allBlack.length;i++){
         allBlack.item(i).classList.remove("black");
-    }
-    if(padAll.classList.contains("hidden")){
-        padAll.classList.remove("hidden");
-        over.classList.add("hidden");
     }
 }
 
@@ -140,7 +133,13 @@ function clickStart(){
     time=0;
     time=100;
     Rank();
-    gameCount++;    
+    gameCount++;
+    
+    if(!gameOver.classList.contains("hidden")){
+        gameOver.classList.add("hidden");
+        game.classList.remove("hidden");
+    }
+    
     score=-1;
     clearBlack();
     putBlack();

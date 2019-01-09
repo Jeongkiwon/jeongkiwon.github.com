@@ -1790,7 +1790,7 @@
 		}
 
 	section.wrapper, article.wrapper {
-		padding: 6em 0;
+		padding: 1em 0;
 	}
 
 		section.wrapper header, article.wrapper header {
@@ -3155,3 +3155,18 @@
 			}
 
 		}
+
+
+
+/*기원*/
+hr{
+	margin-bottom: 0px;
+}
+h1{
+	font-size: 20px;
+	margin-bottom:30px;
+}
+article{
+	width: 30%;
+
+}
